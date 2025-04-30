@@ -28,16 +28,24 @@ To write a Python program to take the radius from the user and find the area of 
 ### PROGRAM
 
 ```
-
-
+class umbrella:
+    def _init_(self,radius):
+        self.radius=radius
+    def rain(self):
+        area=3.141592*radius*radius
+        return area
+u=umbrella()
+radius=int(input())
+print("Area of circle: {:.2f}".format(u.rain()))
 
 ```
 
 ### OUTPUT
 
-
+![image](https://github.com/user-attachments/assets/995058ee-da84-4460-98cc-6bd6d570673a)
 
 ### RESULT
+Thus the Python program to take the radius from the user and find the area of a circle using the class name `umbrella` and function name `rain` was implemented and executed successfully.
 
 
 
