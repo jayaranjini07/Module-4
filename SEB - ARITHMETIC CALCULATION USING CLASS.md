@@ -1,45 +1,50 @@
 # Exp.No:20  
-## SEB - ARITHMETIC CALCULATION USING CLASS
+## SEB - CLASS AND METHODS
 
 ---
 
 ### AIM  
-To write a Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
-- `choice 1` → Perform addition  
-- `choice 2` → Perform division  
-- `choice 0` → Exit  
-- For other choices, print 'Invalid choice'
+To write a Python class which has two methods get_String and print_String. get_String accept a string from the user and print_String print the string in upper case.
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Create a class `Saveetha`.  
-3. Define the following methods inside the `Saveetha` class:  
-   - `__init__(self)`: Initializes `a` and `b` to zero.  
-   - `setvalues(self, a, b)`: Sets the values of `a` and `b`.  
-   - `add(self)`: Performs the addition operation.  
-   - `div(self)`: Performs the division operation. If `b` is zero, returns an error message for division by zero.  
-4. Create a `main()` function.  
-5. Take input from the user for the values of `a` and `b` using `setvalues(a, b)` method.  
-6. Use a `while True` loop to repeatedly ask the user for a choice:  
-   - If the choice is 1, call the `add()` method and print the result.  
-   - If the choice is 2, call the `div()` method and print the result. Handle division by zero.  
-   - If the choice is 0, print "Exiting!" and exit the loop.  
-   - If the choice is not 1, 2, or 0, print "Invalid choice".  
-7. Terminate the program.
+Sure! Here's a **short version of the algorithm**:
+
+---
+
+### **Algorithm (Short Version):**
+
+1. Define class `c` with:
+   * Variable `a` initialized as an empty string.
+   * Method `get_String` to take user input and store in `a`.
+   * Method `print_String` to print `a` in uppercase.
+2. Create object `c1` of class `c`.
+3. Call `c1.get_String()` to get input.
+4. Call `c1.print_String()` to display the input in uppercase.
 
 ---
 
 ### PROGRAM
 
 ```
-
-
+class c:
+    def __init__(self):
+        self.a=""
+    def get_String(self):
+        self.a=input()
+    def print_String(self):
+        print(self.a.upper())
+c1=c()
+c1.get_String()
+c1.print_String()
 
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/bbb3962f-ebe5-4c46-b299-3d508cafe198)
+
 ### RESULT
+Thus the Python class which has two methods get_String and print_String. get_String accept a string from the user and print_String print the string in upper case was implemented and executed successfully.
